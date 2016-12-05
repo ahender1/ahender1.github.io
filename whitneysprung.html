@@ -29,27 +29,33 @@
     <style> 
     body {background-color: white; padding: 0; margin: 0;} 
     canvas {vertical-align: top;} 
-    p {color: black;background-color:white; font-size:20px; border-radius:5px; padding:2px}
+    p {color: black;background-color:white; font-size:35px; border-radius:5px; padding:2px text-align}
 	a:link {color: black;}
 	a:visited {color: black;}
+	button {font-size:30px;}
+	#clear {position:absolute; TOP:0px; LEFT:45px}
+	#next {position:absolute; TOP:0px; LEFT:275px}
+	#codedby {position:absolute; BOTTOM:0px; LEFT: 45px}
+	#mydiv {position:absolute; bottom:100px; left: 45px; color: black; background-color: white; padding: 5px; border-radius: 5px; display: none; font-size: 25px}
     </style>
   </head>
   <body>
 
-  <p STYLE="position:absolute; TOP:0px; LEFT:30px; font-size:30px">
-  <a href = "whitneysprung.html">Clear Screen</a></p>
+  <div id = "clear"><p>
+  <a href = "whitneysprung.html">Clear Screen</a></p></div>
 
-  <p STYLE="position:absolute; TOP:0px; LEFT:250px; font-size:30px">
-  <a href = "alexjenkins.html">Try a Different Sketch</a></p>
+  <div id = "next"><p>
+  <a href = "alexjenkins.html">Try a Different Sketch</a></p></div>
  
-  <p style="position:absolute; bottom:0px; left: 15px; font-size:30px">Coded by Whitney Sprung '22 &nbsp;&nbsp;&nbsp;
-  <button style="font-size:30px;">Show Code</button></p>
+  <div id = "codedby"><p>
+  Coded by Whitney Sprung '22 &nbsp;
+  <button>Show Code</button></p></div>
  
  
  
  
  <!-----------------CODE BELOW--------------------!>
-  <div id = "mydiv" style = "position:absolute; bottom:100px; left: 30px; color: black; background-color: white; padding: 5px; border-radius: 5px; display: none; font-size: 25px">
+  <div id = "mydiv">
 
 
 

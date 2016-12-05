@@ -29,31 +29,36 @@
     <style> 
     body {background-color: white; padding: 0; margin: 0;} 
     canvas {vertical-align: top;} 
-    p {color: black;background-color:white; font-size:20px; border-radius:5px; padding:2px}
+    p {color: black;background-color:white; font-size:35px; border-radius:5px; padding:2px text-align}
 	a:link {color: black;}
 	a:visited {color: black;}
+	button {font-size:30px;}
+	#clear {position:absolute; TOP:0px; LEFT:45px}
+	#next {position:absolute; TOP:0px; LEFT:275px}
+	#codedby {position:absolute; BOTTOM:0px; LEFT: 45px}
+	#mydiv {position:absolute; bottom:100px; left: 45px; color: black; background-color: white; padding: 5px; border-radius: 5px; display: none; font-size: 25px}
     </style>
   </head>
   <body>
 
-  <p STYLE="position:absolute; TOP:0px; LEFT:15px;">
-  <a href = "helena.html">Clear Screen</a></p>
+  <div id = "clear"><p>
+  <a href = "helena.html">Clear Screen</a></p></div>
 
-  <p STYLE="position:absolute; TOP:0px; LEFT:150px;">
-  <a href = "whitneywise.html">Try a Different Sketch</a></p>
+  <div id = "next"><p>
+  <a href = "whitneywise.html">Try a Different Sketch</a></p></div>
  
-  <p style="position:absolute; bottom:0px; left: 15px;">Coded by Helena Servin-deMarrais '22 &nbsp;&nbsp;&nbsp;
-  <button style="font-size:17px;">Show Code</button></p>
+  <div id = "codedby"><p>
+  Coded by Helena Servin-DeMarrais '22 &nbsp;
+  <button>Show Code</button></p></div>
  
  
  
  
  <!-----------------CODE BELOW--------------------!>
-  <div id = "mydiv" style = "position:absolute; bottom:100px; left: 15px; color: black; background-color: white; padding: 5px; border-radius: 5px">
-  
+  <div id = "mydiv">
 
 function setup() {<br>
- createCanvas(1400, 800);<br>
+ createCanvas(1700, 700);<br>
 }<br>
 <br>
 function draw() {<br>

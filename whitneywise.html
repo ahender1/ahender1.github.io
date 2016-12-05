@@ -27,32 +27,37 @@
     </script>
 
     <style> 
-    body {background-color: black; padding: 0; margin: 0;} 
+    body {background-color: #fae; padding: 0; margin: 0;} 
     canvas {vertical-align: top;} 
-    p {color: black; background-color:#fae; font-size:20px; border-radius:5px; padding:2px}
-	a:link {color: black;}
-	a:visited {color: black;}
+    p {color: white;background-color:#fae; font-size:35px; border-radius:5px; padding:2px text-align}
+	a:link {color: white;}
+	a:visited {color: white;}
+	button {font-size:30px;}
+	#clear {position:absolute; TOP:0px; LEFT:45px}
+	#next {position:absolute; TOP:0px; LEFT:275px}
+	#codedby {position:absolute; BOTTOM:0px; LEFT: 45px}
+	#mydiv {position:absolute; bottom:100px; left: 45px; color: white; background-color: #fae; padding: 5px; border-radius: 5px; display: none; font-size: 25px}
     </style>
   </head>
   <body>
 
-  <p STYLE="position:absolute; TOP:0px; LEFT:15px;">
-  <a href = "whitneywise.html">Clear Screen</a></p>
+  <div id = "clear"><p>
+  <a href = "whitneywise.html">Clear Screen</a></p></div>
 
-  <p STYLE="position:absolute; TOP:0px; LEFT:150px;">
-  <a href = "whitneysprung.html">Try a Different Sketch</a></p>
-  
-  <p style="position:absolute; bottom:0px; left: 15px;">Coded by Whitney Wise '22 &nbsp;&nbsp;&nbsp;
-  <button style="font-size:17px;">Show Code</button></p>
+  <div id = "next"><p>
+  <a href = "whitneysprung.html">Try a Different Sketch</a></p></div>
+ 
+  <div id = "codedby"><p>Coded by Whitney Wise '22 &nbsp;
+  <button>Show Code</button></p></div>
  
  
  
  
  <!-----------------CODE BELOW--------------------!>
-  <div id = "mydiv" style = "position:absolute; bottom:100px; left: 15px; color: black; background-color: #fae; padding: 5px; border-radius: 5px">
- 
+  <div id = "mydiv">
+  
 function setup() {<br>
- createCanvas(1500,1500);<br>
+ createCanvas(1700,1700);<br>
 background('#fae')<br>
 }<br>
 <br>
