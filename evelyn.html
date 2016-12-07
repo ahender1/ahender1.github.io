@@ -2,14 +2,13 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Alex's Perma-square + triangle lines</title>
     <script src="libraries/p5.js" type="text/javascript"></script>
 
     <script src="libraries/p5.dom.js" type="text/javascript"></script>
     <script src="libraries/p5.sound.js" type="text/javascript"></script>
 
-    <script src="alexjenkins.js" type="text/javascript"></script>
-
+    <script src="evelyn.js" type="text/javascript"></script>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     
     
@@ -28,28 +27,28 @@
     </script>
 
     <style> 
-    body {background-color: white; padding: 0; margin: 0;} 
+    body {background-color: #222222; padding: 0; margin: 0;} 
     canvas {vertical-align: top;} 
-    p {color: black;background-color:white; font-size:35px; border-radius:5px; padding:2px text-align}
-	a:link {color: black;}
-	a:visited {color: black;}
+    p {color: white;background-color:#222222; font-size:35px; border-radius:5px; padding:2px text-align}
+	a:link {color: white;}
+	a:visited {color: white;}
 	button {font-size:30px;}
 	#clear {position:absolute; TOP:0px; LEFT:45px}
 	#next {position:absolute; TOP:0px; LEFT:275px}
 	#codedby {position:absolute; BOTTOM:0px; LEFT: 45px}
-	#mydiv {position:absolute; bottom:100px; left: 45px; color: black; background-color: white; padding: 5px; border-radius: 5px; display: none; font-size: 25px}
+	#mydiv {position:absolute; bottom:100px; left: 45px; color: white; background-color: #222222; padding: 5px; border-radius: 5px; display: none; font-size: 25px}
     </style>
   </head>
   <body>
 
   <div id = "clear"><p>
-  <a href = "alexjenkins.html">Clear Screen</a></p></div>
+  <a href = "evelyn.html">Clear Screen</a></p></div>
 
   <div id = "next"><p>
-  <a href = "carolinesaunders.html">Try a Different Sketch</a></p></div>
+  <a href = "hutton.html">Try a Different Sketch</a></p></div>
  
   <div id = "codedby"><p>
-  Coded by Alex Jenkins '22 &nbsp;
+  Coded by Evelyn Kay Girard '22 &nbsp;
   <button>Show Code</button></p></div>
  
  
@@ -58,29 +57,27 @@
  <!-----------------CODE BELOW--------------------!>
   <div id = "mydiv">
 
+
 function setup() {<br>
-createCanvas(1700,1700);<br>
+ createCanvas(1900,1050);<br>
+ background('#222222');<br>
 }<br>
 <br>
 function draw() {<br>
  if (mouseIsPressed) {<br>
- fill(150, 255, 124);<br>
- }else{<br>
- fill(124, 255, 244);<br>
- }<br>
- triangle(mouseX, mouseY, 80,80);<br>
- <br>
- if (mouseIsPressed) {<br>
- fill(66, 244, 170);<br>
+ fill(0,0,255);<br>
  } else {<br>
- fill(166, 99, 255);<br>
+ fill(0,255,255);<br>
  }<br>
- rect(mouseX, mouseY, 80, 80);<br>
-}<br>
-
-
+ ellipse(mouseX, mouseY, 80, 80);<br>
+}
 
  </div>
 
   </body>
 </html>
+
+
+
+
+

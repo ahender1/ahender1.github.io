@@ -2,14 +2,13 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Alex's Perma-square + triangle lines</title>
     <script src="libraries/p5.js" type="text/javascript"></script>
 
     <script src="libraries/p5.dom.js" type="text/javascript"></script>
     <script src="libraries/p5.sound.js" type="text/javascript"></script>
 
-    <script src="alexjenkins.js" type="text/javascript"></script>
-
+    <script src="jp.js" type="text/javascript"></script>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     
     
@@ -30,12 +29,13 @@
     <style> 
     body {background-color: white; padding: 0; margin: 0;} 
     canvas {vertical-align: top;} 
-    p {color: black;background-color:white; font-size:35px; border-radius:5px; padding:2px text-align}
+    p {color: black;background-color:white; font-size:35px; border-radius:5px; padding:2px}
 	a:link {color: black;}
 	a:visited {color: black;}
 	button {font-size:30px;}
 	#clear {position:absolute; TOP:0px; LEFT:45px}
 	#next {position:absolute; TOP:0px; LEFT:275px}
+	#instructions {position: absolute; TOP: 100px; LEFT: 130px; width: 350px; font-size: 25px; font-style:italic; color: black;background-color:white; border-radius:5px; padding:2px; text-align:center }
 	#codedby {position:absolute; BOTTOM:0px; LEFT: 45px}
 	#mydiv {position:absolute; bottom:100px; left: 45px; color: black; background-color: white; padding: 5px; border-radius: 5px; display: none; font-size: 25px}
     </style>
@@ -43,13 +43,16 @@
   <body>
 
   <div id = "clear"><p>
-  <a href = "alexjenkins.html">Clear Screen</a></p></div>
+  <a href = "jp.html">Clear Screen</a></p></div>
 
   <div id = "next"><p>
-  <a href = "carolinesaunders.html">Try a Different Sketch</a></p></div>
+  <a href = "lizzie.html">Try a Different Sketch</a></p></div>
+  
+  <div id = "instructions">
+  Try holding down the left or right arrow key on the keyboard while you draw with the mouse. <BR>(Then try clicking instead!)</div>
  
   <div id = "codedby"><p>
-  Coded by Alex Jenkins '22 &nbsp;
+  Coded by Jordan Pittignano '22 &nbsp;
   <button>Show Code</button></p></div>
  
  
@@ -58,29 +61,40 @@
  <!-----------------CODE BELOW--------------------!>
   <div id = "mydiv">
 
-function setup() {<br>
-createCanvas(1700,1700);<br>
-}<br>
-<br>
-function draw() {<br>
- if (mouseIsPressed) {<br>
- fill(150, 255, 124);<br>
- }else{<br>
- fill(124, 255, 244);<br>
- }<br>
- triangle(mouseX, mouseY, 80,80);<br>
- <br>
- if (mouseIsPressed) {<br>
- fill(66, 244, 170);<br>
- } else {<br>
- fill(166, 99, 255);<br>
- }<br>
- rect(mouseX, mouseY, 80, 80);<br>
-}<br>
 
+function setup() {<br>
+ createCanvas(1900, 1050)<br>
+}<br>
+ <br>
+function draw() {<br>
+if (mouseIsPressed) {<br>
+ fill(13, 255, 255);<br>
+ } else {<br>
+ fill('rgb(0,255,0)');<br>
+ }<br>
+ <br>
+ if (keyIsDown(RIGHT_ARROW)) {<br>
+ <br>
+ fill('#fae');<br>
+ <br>
+ }<br>
+ <br>
+ if (keyIsDown(LEFT_ARROW)) {<br>
+ <br>
+ fill(color(0, 0, 255));<br>
+ }<br>
+ ellipse(mouseX, mouseY, 130, 130);<br>
+ <br>
+}<br>
+ <br>
 
 
  </div>
 
   </body>
 </html>
+
+
+
+
+
