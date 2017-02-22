@@ -1,4 +1,4 @@
-var message = "Roma",
+var message = "CUPCAKE",
   font,
   bounds, // holds x, y, w, h of the text's bounding box
   fontsize = 60,
