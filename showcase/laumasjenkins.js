@@ -32,25 +32,25 @@ function draw() { //draw function
     tB = false
   }
   if(tB) {
-    b=b-2
+    b=b-1
   }
   else {
-    b=b+2
+    b=b+1
   }
   
   // Draw a circle
   fill(30, 144, 255); //middle of the circle is navy blue (RGB) 
   //because only one value, assumes that all the values are the same, making it black, white, or a shade of grey
   noStroke() // takes out the outline/ stroke
-  ellipse(x1, y1, 40, 40); //circle's position = determined by lines 8 and 9, size is 40px both tall and wide
+  ellipse(x1, y1, 50, 50); //circle's position = determined by lines 8 and 9, size is 40px both tall and wide
   fill(255, 140, 0) //middle of the circle is dark orange (RGB)
-  ellipse(x2, y2, 20, 20) //circle's position = determined by lines 10 and 11, size is 20px both tall and wide
+  ellipse(x2, y2, 30, 30) //circle's position = determined by lines 10 and 11, size is 20px both tall and wide
   fill(127, 255, 0) //middle of the circle is dark orange (RGB)
-  ellipse(x3, y3, 15, 15) //circle's position = determined by lines 10 and 11, size is 20px both tall and wide
+  ellipse(x3, y3, 25, 25) //circle's position = determined by lines 10 and 11, size is 20px both tall and wide
   fill(220, 20, 60)
-  rect(x4, y4, 50, 50)
+  rect(x4, y4, 60, 60)
   fill(186, 85, 211)
-  rect(x5, y5, 35, 35, 10)
+  rect(x5, y5, 45, 45, 10)
   
   // Jiggling randomly on the horizontal axis
   x1 = x1 + random(-20, 20); //when the draw function runs, either goes left or right by one pixel
