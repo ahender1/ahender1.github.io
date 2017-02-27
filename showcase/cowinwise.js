@@ -12,7 +12,7 @@ function setup() {
   colorMode(HSB, 255);//hsb= the change of color light, bright, saturation, hue
   // slider has a range between 0 and 255 with a starting value of 127
   slider = createSlider(0, 255, 127);// the amount of colors that you cna make when u move it
-slider. position(6,655)
+slider. position(900,355)
  
 }
 
